@@ -1,98 +1,88 @@
 /* ============================================================================
-   EDIT ME. Everything on the website comes from this one file.
-   Change the text, add projects, add films, then refresh the page.
-   - Text in *asterisks* is shown in the soft italic serif.
-   - Images go in assets/projects/, videos in assets/videos/, posters in assets/posters/.
-   - To hide a section, delete its items or set show: false.
+   SANTOSH KUMAR SAH — PORTFOLIO CONFIG
+   Curated for Elip (YC W25) — SDE Intern: Conversational AI, Search & Backend.
+   Edit this file to update the website content.
    ============================================================================ */
 window.SITE = {
-
-  name: "Santosh",
-  role: "student builder",
-  city: "Delhi",
-  timezone: "Asia/Kolkata",          // the little live clock in the menu
-  email: "hello@yourmail.com",       // <- your real email
-  loadingPercent: 63,                // how "loaded" you feel right now :)
+  name: "Santosh Kumar Sah",
+  role: "software engineer · AI systems & backend",
+  city: "Rourkela, India",
+  timezone: "Asia/Kolkata",
+  email: "santosh.sah.1025@gmail.com",
+  loadingPercent: 86,
 
   hero: {
-    kicker: "a story in six chapters",
-    line: "is *still loading*",
-    sub: "Third-year student from Delhi. I tried everything, kept the curiosity, and I'm building my way to the next station.",
+    kicker: "building systems that make information useful",
+    line: "searching for *signal*",
+    sub: "Electrical Engineering student at NIT Rourkela. I build AI-powered applications, backend systems, and search experiments—from prototypes to things that actually run.",
   },
 
-  intro: "I'm a *3rd-year student* from Delhi who wrote his first line of code in 2024, tried *everything*, from code and AI to editing, DSA and content, and turned all that confusion into *curiosity*. This is that story, so far.",
+  intro: "I'm a third-year Electrical Engineering student at NIT Rourkela interested in the engineering behind useful AI products: retrieval, vector search, LLM workflows, APIs, and reliable backend systems. I like taking an idea apart, understanding the moving pieces, and putting it back together into something people can use. Still curious; increasingly less random.",
 
-  /* ---------- the storybook: one page per chapter ----------
-     art: delhi, code, errors, pills, ai, loading  (or set image: "assets/projects/x.jpg")
-     color: sky, peach, butter, sage, lilac, rose                                        */
   story: [
-    { no: "01", title: "Delhi", art: "delhi", color: "peach",   text: "Born and raised in Delhi. A *quiet* kid who liked figuring out how things worked." },
-    { no: "02", title: "Hello, world", art: "code", color: "sky", text: "2024. My first line of code printed two words and I felt like a *wizard*." },
-    { no: "03", title: "Errors. So many.", art: "errors", color: "rose", text: "Then the bugs arrived. My first real project worked on the *47th try*." },
-    { no: "04", title: "Master of none", art: "pills", color: "lilac", text: "Development, AI/ML, editing, DSA, content. I tried *all of it*, and I'm still finding my main thing." },
-    { no: "05", title: "Then AI arrived", art: "ai", color: "sage", text: "Everyone had an opinion about the future. I chose the quiet one: *keep learning*." },
-    { no: "06", title: "Still loading", art: "loading", color: "butter", text: "Third year. Not finished, not lost. *Loading*, at my own speed." },
+    { no: "01", title: "The starting point", art: "delhi", color: "peach", text: "Raised in Delhi. Curiosity came early; the direction took a little longer to find." },
+    { no: "02", title: "Learning by building", art: "code", color: "sky", text: "Started coding in 2024. Tutorials helped me start; projects taught me what I didn't understand." },
+    { no: "03", title: "Backend, not just buttons", art: "errors", color: "rose", text: "APIs, databases, queues, deployment, debugging—and learning that the happy path is only one path." },
+    { no: "04", title: "AI with engineering underneath", art: "ai", color: "lilac", text: "Exploring LLM applications, structured outputs, retrieval, and the systems needed to make them dependable." },
+    { no: "05", title: "Search is interesting", art: "code", color: "sage", text: "Building a vector-search engine from scratch made ranking, indexing, recall, and latency feel tangible." },
+    { no: "06", title: "Currently building", art: "loading", color: "butter", text: "Focused on AI systems and backend fundamentals. The roadmap is shorter; the rabbit holes are still excellent." },
   ],
 
-  /* ---------- the things I tried (drag them around on the site) ---------- */
   skills: [
-    { name: "Development", note: "web, apps, building things" },
-    { name: "AI / ML", note: "models, tools, curiosity" },
-    { name: "Editing", note: "films, motion, timing" },
-    { name: "DSA", note: "the gym for the brain" },
-    { name: "Content", note: "telling stories online" },
-    { name: "Design", note: "making it feel right" },
-    { name: "Curiosity", note: "the main thing, maybe", color: "tomato" },
+    { name: "Python", note: "backend, data, AI tooling" },
+    { name: "LLMs & AI", note: "prompting, structured outputs, tool workflows" },
+    { name: "Search & Retrieval", note: "embeddings, nearest-neighbor algorithms" },
+    { name: "Backend", note: "FastAPI, Node.js, REST APIs" },
+    { name: "Databases", note: "PostgreSQL, MongoDB, Redis, SQLite" },
+    { name: "Systems", note: "Docker, queues, testing, cloud deployment" },
+    { name: "DSA", note: "100+ problems · Codeforces", color: "tomato" },
   ],
 
-  /* ---------- projects: copy a block to add one ----------
-     image: put a file in assets/projects/ and write its path, or leave "" for a drawn cover.
-     color: one of sky, peach, butter, sage, lilac, rose                                  */
   projects: [
-    { title: "Your first project", year: "2024", tags: ["web", "learning"], color: "sky",
-      summary: "Replace this with what you built, why, and what you learned. Two or three lines is perfect.",
-      link: "https://github.com/", image: "" },
-    { title: "A thing you shipped", year: "2025", tags: ["ai", "python"], color: "peach",
-      summary: "What problem did it solve? Who used it? What would you do differently next time?",
-      link: "", image: "" },
-    { title: "An experiment", year: "2025", tags: ["design", "motion"], color: "lilac",
-      summary: "Small experiments count. Show the curiosity, not just the finished things.",
-      link: "", image: "" },
-    { title: "Hackathon build", year: "2026", tags: ["team", "48 hours"], color: "sage",
-      summary: "Tell the story of the weekend. What broke at 3 AM and how you fixed it.",
-      link: "", image: "" },
+    {
+      title: "Vector Database Engine",
+      year: "2026",
+      tags: ["semantic search", "Python", "FastAPI", "NumPy", "HNSW", "IVF"],
+      color: "sky",
+      summary: "Built a vector-search engine from scratch with brute-force, IVF k-means, and HNSW indexing. Benchmarked 5,000+ vectors; reported up to 99% recall@10 and 0.13 ms query latency. Includes a write-ahead-log storage layer, REST API, and 40 automated tests.",
+      link: "https://github.com/santosh5603",
+      image: ""
+    },
+    {
+      title: "ScamGuard",
+      year: "2026",
+      tags: ["LLM", "Gemini", "Search Grounding", "TypeScript", "MongoDB"],
+      color: "peach",
+      summary: "AI-assisted job-scam detection built for a hackathon. Uses Gemini 2.5 Flash with Search Grounding to investigate company claims, analyze suspicious language, and return an explainable 0–100 risk score. Includes scan persistence and an analytics dashboard.",
+      link: "https://github.com/santosh5603/Scamguard",
+      image: ""
+    },
+    {
+      title: "Instant!Q",
+      year: "2026",
+      tags: ["FastAPI", "Python", "Redis", "RQ", "Supabase", "Playwright", "Docker"],
+      color: "lilac",
+      summary: "A multi-stage resource-collection pipeline that detects creator CTAs, captures returned resources, stores them, and syncs them to Notion. Includes background workers, queue-based processing, retries, checkpoints, health monitoring, and a dashboard.",
+      link: "https://github.com/santosh5603/instantIQ",
+      image: ""
+    },
   ],
 
-  /* ---------- films ---------- */
-  films: [
-    { title: "Loading Santosh", length: "1:12", year: "2026",
-      text: "A progress bar with eyes tries to grow up. Motion graphics, original soundtrack.",
-      src: "assets/videos/loading-santosh.mp4", poster: "assets/posters/loading-santosh.jpg", color: "butter" },
-    { title: "A Bento in 9 Bites", length: "1:23", year: "2026",
-      text: "My story as a Japanese lunchbox, printed like a risograph at 12 frames a second.",
-      src: "assets/videos/santosh-bento.mp4", poster: "assets/posters/santosh-bento.jpg", color: "rose" },
-    { title: "Every Legend Starts Somewhere", length: "0:40", year: "2026",
-      text: "A pencil line, a blueprint and a hologram, narrated like a nature documentary.",
-      src: "assets/videos/santosh-intro.mp4", poster: "assets/posters/santosh-intro.jpg", color: "sky" },
-  ],
+  films: [],
 
-  /* ---------- next stations (dreams) ---------- */
   next: [
-    { title: "First job", icon: "case" },
-    { title: "Financially stable", icon: "coins" },
-    { title: "My own business", icon: "rocket" },
-    { title: "My own house", icon: "house" },
-    { title: "One night in a Swiss castle", icon: "castle" },
-    { title: "Travel with family", icon: "plane" },
+    { title: "Build AI systems people rely on", icon: "rocket" },
+    { title: "Become a stronger backend engineer", icon: "case" },
+    { title: "Contribute to open source", icon: "code" },
+    { title: "Work with a team that ships", icon: "users" },
+    { title: "Keep learning—with fewer tabs open", icon: "book" },
   ],
 
-  /* ---------- say hi ---------- */
   links: [
-    { label: "GitHub", url: "https://github.com/" },
-    { label: "LinkedIn", url: "https://linkedin.com/" },
-    { label: "Instagram", url: "https://instagram.com/" },
-    { label: "YouTube", url: "https://youtube.com/" },
+    { label: "GitHub", url: "https://github.com/santosh5603" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/" },
+    { label: "Email", url: "mailto:santosh.sah.1025@gmail.com" },
   ],
 
-  marquee: ["still loading", "student of everything", "Delhi", "2024 → ∞", "master of none", "curious on purpose"],
+  marquee: ["AI systems", "semantic search", "backend engineering", "NIT Rourkela", "building · testing · learning"],
 };

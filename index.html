@@ -1,213 +1,264 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Santosh · still loading</title>
-<meta name="description" content="Portfolio of Santosh, a student builder from Delhi. Code, AI, films and a lot of curiosity.">
-<meta name="theme-color" content="#F5EFE3">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='18' width='56' height='28' rx='14' fill='%23FFFDF8' stroke='%2323201C' stroke-width='4'/%3E%3Crect x='10' y='24' width='34' height='16' rx='8' fill='%23F1DE92'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%2323201C'/%3E%3Ccircle cx='40' cy='32' r='3' fill='%2323201C'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Schibsted+Grotesk:wght@400..700&display=swap">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santosh · still loading</title>
+  <meta name="description"
+    content="Portfolio of Santosh, a student builder from Delhi. Code, AI, films and a lot of curiosity.">
+  <meta name="theme-color" content="#F5EFE3">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='18' width='56' height='28' rx='14' fill='%23FFFDF8' stroke='%2323201C' stroke-width='4'/%3E%3Crect x='10' y='24' width='34' height='16' rx='8' fill='%23F1DE92'/%3E%3Ccircle cx='32' cy='32' r='3' fill='%2323201C'/%3E%3Ccircle cx='40' cy='32' r='3' fill='%2323201C'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Schibsted+Grotesk:wght@400..700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="is-loading">
 
-<!-- shared SVG bits -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="14" height="14" fill="#F1DE92"/><rect width="7" height="14" fill="#23201C"/>
-    </pattern>
-  </defs>
-</svg>
+  <!-- shared SVG bits -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <pattern id="stripes" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="14" height="14" fill="#F1DE92" />
+        <rect width="7" height="14" fill="#23201C" />
+      </pattern>
+    </defs>
+  </svg>
 
-<div class="grain" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-<!-- ============ PRELOADER ============ -->
-<div class="preloader" aria-hidden="true">
-  <div class="pre-inner">
-    <div class="pre-num"><span id="preNum">0</span><small>%</small></div>
-    <div class="pre-bar"><div class="pre-fill"><span class="eyes"><span class="eye"><i></i></span><span class="eye"><i></i></span></span></div></div>
-    <p class="pre-txt mono" id="preTxt">loading <span data-name>Santosh</span>…</p>
-  </div>
-</div>
-
-<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
-
-<!-- ============ NAV ============ -->
-<header class="nav">
-  <a href="#top" class="nav-pill logo" data-scroll><span data-name>Santosh</span><span class="logo-dot"></span></a>
-  <div class="nav-pill clock mono"><span class="dot"></span><span data-city>Delhi</span>&nbsp;<span id="clock">--:--</span></div>
-  <nav class="nav-pill nav-links mono" aria-label="Main">
-    <a href="#story" data-scroll>Story</a><a href="#work" data-scroll>Work</a><a href="#films" data-scroll>Films</a><a href="#contact" data-scroll>Say hi</a>
-  </nav>
-  <button class="nav-pill menu-btn mono" aria-expanded="false" aria-controls="menu">Menu</button>
-</header>
-<div class="menu" id="menu" aria-hidden="true">
-  <a href="#story" data-scroll>Story</a><a href="#skills" data-scroll>Skills</a><a href="#work" data-scroll>Work</a><a href="#films" data-scroll>Films</a><a href="#next" data-scroll>Next</a><a href="#contact" data-scroll>Say hi</a>
-</div>
-
-<main>
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top" data-bg="#F5EFE3">
-    <div class="sky" aria-hidden="true">
-      <div class="sun" data-depth="0.4"></div>
-      <svg class="sky-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-        <path id="planePath" class="trail" d="M-80 640 C160 520 300 760 520 600 S820 300 1040 420 S1320 600 1540 260"/>
-        <g id="plane"><path class="plane" d="M-20 -11 L22 0 L-20 11 L-11 0 Z M-11 0 L22 0"/></g>
-        <g class="sparks">
-          <path class="spark" transform="translate(240 200)" d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z"/>
-          <path class="spark" transform="translate(1180 760)" d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z"/>
-          <path class="spark" transform="translate(860 150)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z"/>
-          <path class="spark" transform="translate(140 740)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z"/>
-          <path class="spark" transform="translate(1320 140)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z"/>
-        </g>
-      </svg>
-      <svg class="cloud c1" data-depth="0.8" viewBox="0 0 170 80"><path d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z"/></svg>
-      <svg class="cloud c2" data-depth="1.4" viewBox="0 0 170 80"><path d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z"/></svg>
-      <svg class="cloud c3" data-depth="0.6" viewBox="0 0 170 80"><path d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z"/></svg>
-    </div>
-
-    <p class="hero-kicker mono" id="heroKicker"></p>
-    <div class="hero-center">
-      <h1 class="hero-name" id="heroName">Santosh</h1>
-      <p class="hero-line" id="heroLine"></p>
-    </div>
-    <svg class="cloud c4" data-depth="1.8" viewBox="0 0 170 80" aria-hidden="true"><path d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z"/></svg>
-
-    <div class="hero-foot">
-      <p class="hero-sub" id="heroSub"></p>
-      <a href="#about" class="scroll-cue mono" data-scroll data-cursor="go">scroll to begin <span class="cue-ball">↓</span></a>
-    </div>
-  </section>
-
-  <div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
-
-  <!-- ============ INTRO ============ -->
-  <section class="intro" id="about" data-bg="#F5EFE3">
-    <span class="label mono">(01) About</span>
-    <p class="intro-text" id="introText"></p>
-    <div class="badge" aria-hidden="true">
-      <svg viewBox="0 0 200 200">
-        <defs><path id="circ" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs>
-        <circle cx="100" cy="100" r="96" class="badge-bg"/>
-        <text class="badge-txt"><textPath href="#circ" id="badgeText">still loading • since 2024 • still loading • since 2024 •</textPath></text>
-      </svg>
-      <div class="badge-face"><span class="eyes"><span class="eye"><i></i></span><span class="eye"><i></i></span></span></div>
-    </div>
-  </section>
-
-  <!-- ============ STORY ============ -->
-  <section class="story" id="story" data-bg="#E8EEF0">
-    <div class="story-pin">
-      <div class="story-track" id="storyTrack">
-        <div class="story-lead">
-          <span class="label mono">(02) The story</span>
-          <h2 class="h2 split">Chapter by <em>chapter</em></h2>
-          <p class="lead-note">A short story about a quiet kid, a lot of browser tabs, and figuring things out one page at a time.</p>
-          <span class="mono swipe">keep scrolling <span>→</span></span>
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <div class="pre-num"><span id="preNum">0</span><small>%</small></div>
+      <div class="pre-bar">
+        <div class="pre-fill"><span class="eyes"><span class="eye"><i></i></span><span class="eye"><i></i></span></span>
         </div>
       </div>
-      <div class="story-progress" aria-hidden="true">
-        <span class="mono" id="spLabel">Chapter 01</span>
-        <span class="sp-line"><i id="spFill"></i></span>
-        <span class="mono" id="spCount">01 / 06</span>
-      </div>
+      <p class="pre-txt mono" id="preTxt">loading <span data-name>Santosh</span>…</p>
     </div>
-  </section>
+  </div>
 
-  <!-- ============ SKILLS ============ -->
-  <section class="skills" id="skills" data-bg="#EEE9F5">
-    <div class="sec-head">
-      <div>
-        <span class="label mono">(03) Things I tried</span>
-        <h2 class="h2 split">Master of <em>none.</em></h2>
-      </div>
-      <p class="sec-note" data-up>...yet. Everything I've tried, in one box. Grab them, throw them, stack them. That's pretty much how my brain works too.</p>
-    </div>
-    <div class="pill-box" id="pillBox" data-cursor="drag">
-      <span class="pill-hint mono">drag &amp; throw ↘</span>
-    </div>
-  </section>
+  <div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
 
-  <!-- ============ WORK ============ -->
-  <section class="work" id="work" data-bg="#F5EFE3">
-    <div class="sec-head">
-      <div>
-        <span class="label mono">(04) Work</span>
-        <h2 class="h2 split">Things I <em>made</em> <sup class="count mono" id="workCount"></sup></h2>
-      </div>
-      <p class="sec-note" data-up>Projects, experiments and the occasional 3 AM idea. Click one to open it.</p>
-    </div>
-    <ul class="proj-list" id="projList"></ul>
-  </section>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav-pill logo" data-scroll><span data-name>Santosh</span><span class="logo-dot"></span></a>
+    <div class="nav-pill clock mono"><span class="dot"></span><span data-city>Delhi</span>&nbsp;<span
+        id="clock">--:--</span></div>
+    <nav class="nav-pill nav-links mono" aria-label="Main">
+      <a href="#story" data-scroll>Story</a><a href="#work" data-scroll>Work</a><a href="#films" data-scroll>Films</a><a
+        href="#contact" data-scroll>Say hi</a>
+    </nav>
+    <button class="nav-pill menu-btn mono" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="#story" data-scroll>Story</a><a href="#skills" data-scroll>Skills</a><a href="#work" data-scroll>Work</a><a
+      href="#films" data-scroll>Films</a><a href="#next" data-scroll>Next</a><a href="#contact" data-scroll>Say hi</a>
+  </div>
 
-  <!-- ============ FILMS ============ -->
-  <section class="films" id="films" data-bg="#F6EBE2">
-    <div class="sec-head">
-      <div>
-        <span class="label mono">(05) Films</span>
-        <h2 class="h2 split">Little <em>films</em></h2>
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-bg="#F5EFE3">
+      <div class="sky" aria-hidden="true">
+        <div class="sun" data-depth="0.4"></div>
+        <svg class="sky-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <path id="planePath" class="trail"
+            d="M-80 640 C160 520 300 760 520 600 S820 300 1040 420 S1320 600 1540 260" />
+          <g id="plane">
+            <path class="plane" d="M-20 -11 L22 0 L-20 11 L-11 0 Z M-11 0 L22 0" />
+          </g>
+          <g class="sparks">
+            <path class="spark" transform="translate(240 200)"
+              d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" />
+            <path class="spark" transform="translate(1180 760)"
+              d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" />
+            <path class="spark" transform="translate(860 150)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z" />
+            <path class="spark" transform="translate(140 740)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z" />
+            <path class="spark" transform="translate(1320 140)" d="M0 -9 L2 -2 L9 0 L2 2 L0 9 L-2 2 L-9 0 L-2 -2 Z" />
+          </g>
+        </svg>
+        <svg class="cloud c1" data-depth="0.8" viewBox="0 0 170 80">
+          <path
+            d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z" />
+        </svg>
+        <svg class="cloud c2" data-depth="1.4" viewBox="0 0 170 80">
+          <path
+            d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z" />
+        </svg>
+        <svg class="cloud c3" data-depth="0.6" viewBox="0 0 170 80">
+          <path
+            d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z" />
+        </svg>
       </div>
-      <p class="sec-note" data-up>Motion pieces about me, animated frame by frame with music made from scratch. Hover to peek, click to watch.</p>
-    </div>
-    <div class="film-grid" id="filmGrid"></div>
-  </section>
 
-  <!-- ============ NEXT ============ -->
-  <section class="next" id="next" data-bg="#ECF0E3">
-    <div class="sec-head center">
-      <span class="label mono">(06) Next stations</span>
-      <h2 class="h2 split">Under <em>construction</em></h2>
-      <p class="sec-note" data-up>The places I'm heading. Not there yet, but the track is being laid one sleeper at a time.</p>
-    </div>
-    <div class="stations" id="stations">
-      <svg class="st-svg" aria-hidden="true">
-        <defs><mask id="stMask" maskUnits="userSpaceOnUse"><path id="stMaskPath" fill="none" stroke="#fff" stroke-width="10"/></mask></defs>
-        <path id="stGhost" class="st-ghost"/>
-        <path id="stLine" class="st-line" mask="url(#stMask)"/>
-        <g id="stPlane"><path class="plane" d="M-16 -9 L18 0 L-16 9 L-9 0 Z M-9 0 L18 0"/></g>
+      <p class="hero-kicker mono" id="heroKicker"></p>
+      <div class="hero-center">
+        <h1 class="hero-name" id="heroName">Santosh</h1>
+        <p class="hero-line" id="heroLine"></p>
+      </div>
+      <svg class="cloud c4" data-depth="1.8" viewBox="0 0 170 80" aria-hidden="true">
+        <path
+          d="M30 72 C10 72 6 50 22 44 C18 24 42 16 54 28 C60 6 96 4 104 26 C118 14 142 24 136 44 C154 46 154 72 132 72 Z" />
       </svg>
+
+      <div class="hero-foot">
+        <p class="hero-sub" id="heroSub"></p>
+        <a href="#about" class="scroll-cue mono" data-scroll data-cursor="go">scroll to begin <span
+            class="cue-ball">↓</span></a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="mq-track" id="mqTrack"></div>
     </div>
-  </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact" data-bg="#F3E7BC">
-    <span class="label mono">(07) Contact</span>
-    <h2 class="say" id="say" aria-label="Say hi.">Say hi.</h2>
-    <p class="contact-note" data-up>I'm an introvert, so an email is honestly my favourite way to talk. Projects, internships, collabs, or just “hey, nice site”.</p>
-    <button class="email-btn" id="emailBtn" data-cursor="copy"><span id="emailTxt"></span><span class="email-ico">⧉</span></button>
-    <div class="links" id="links"></div>
-  </section>
-</main>
+    <!-- ============ INTRO ============ -->
+    <section class="intro" id="about" data-bg="#F5EFE3">
+      <span class="label mono">(01) About</span>
+      <p class="intro-text" id="introText"></p>
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs>
+            <path id="circ" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0" />
+          </defs>
+          <circle cx="100" cy="100" r="96" class="badge-bg" />
+          <text class="badge-txt">
+            <textPath href="#circ" id="badgeText">still loading • since 2024 • still loading • since 2024 •</textPath>
+          </text>
+        </svg>
+        <div class="badge-face"><span class="eyes"><span class="eye"><i></i></span><span
+              class="eye"><i></i></span></span></div>
+      </div>
+    </section>
 
-<footer class="foot mono">
-  <span>© <span id="year"></span> <span data-name>Santosh</span> · made in <span data-city>Delhi</span></span>
-  <span id="footJoke">page: 100% loaded · me: still loading</span>
-  <button class="to-top" id="toTop">back to top ↑</button>
-</footer>
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story" data-bg="#E8EEF0">
+      <div class="story-pin">
+        <div class="story-track" id="storyTrack">
+          <div class="story-lead">
+            <span class="label mono">(02) The story</span>
+            <h2 class="h2 split">Chapter by <em>chapter</em></h2>
+            <p class="lead-note">A short story about a quiet kid, a lot of browser tabs, and figuring things out one
+              page at a time.</p>
+            <span class="mono swipe">keep scrolling <span>→</span></span>
+          </div>
+        </div>
+        <div class="story-progress" aria-hidden="true">
+          <span class="mono" id="spLabel">Chapter 01</span>
+          <span class="sp-line"><i id="spFill"></i></span>
+          <span class="mono" id="spCount">01 / 06</span>
+        </div>
+      </div>
+    </section>
 
-<div class="meter" aria-hidden="true">
-  <span class="meter-bar"><i id="meterFill"><span class="eyes"><span class="eye"><i></i></span><span class="eye"><i></i></span></span></i></span>
-  <span id="meterTxt">0% read</span>
-</div>
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills" data-bg="#EEE9F5">
+      <div class="sec-head">
+        <div>
+          <span class="label mono">(03) Things I tried</span>
+          <h2 class="h2 split">Master of <em>none.</em></h2>
+        </div>
+        <p class="sec-note" data-up>...yet. Everything I've tried, in one box. Grab them, throw them, stack them. That's
+          pretty much how my brain works too.</p>
+      </div>
+      <div class="pill-box" id="pillBox" data-cursor="drag">
+        <span class="pill-hint mono">drag &amp; throw ↘</span>
+      </div>
+    </section>
 
-<div class="preview" id="preview" aria-hidden="true"></div>
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work" data-bg="#F5EFE3">
+      <div class="sec-head">
+        <div>
+          <span class="label mono">(04) Work</span>
+          <h2 class="h2 split">Things I <em>made</em> <sup class="count mono" id="workCount"></sup></h2>
+        </div>
+        <p class="sec-note" data-up>Projects, experiments and the occasional 3 AM idea. Click one to open it.</p>
+      </div>
+      <ul class="proj-list" id="projList"></ul>
+    </section>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Film player">
-  <button class="lb-close mono" id="lbClose">close ✕</button>
-  <div class="lb-frame"><video id="lbVideo" controls playsinline></video></div>
-  <p class="lb-title" id="lbTitle"></p>
-</div>
-<div class="toast mono" id="toast" role="status"></div>
+    <!-- ============ FILMS ============ -->
+    <section class="films" id="films" data-bg="#F6EBE2">
+      <div class="sec-head">
+        <div>
+          <span class="label mono">(05) Films</span>
+          <h2 class="h2 split">Little <em>films</em></h2>
+        </div>
+        <p class="sec-note" data-up>Motion pieces about me, animated frame by frame with music made from scratch. Hover
+          to peek, click to watch.</p>
+      </div>
+      <div class="film-grid" id="filmGrid"></div>
+    </section>
 
-<script src="content.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
-<script src="main.js"></script>
+    <!-- ============ NEXT ============ -->
+    <section class="next" id="next" data-bg="#ECF0E3">
+      <div class="sec-head center">
+        <span class="label mono">(06) Next stations</span>
+        <h2 class="h2 split">Under <em>construction</em></h2>
+        <p class="sec-note" data-up>The places I'm heading. Not there yet, but the track is being laid one sleeper at a
+          time.</p>
+      </div>
+      <div class="stations" id="stations">
+        <svg class="st-svg" aria-hidden="true">
+          <defs>
+            <mask id="stMask" maskUnits="userSpaceOnUse">
+              <path id="stMaskPath" fill="none" stroke="#fff" stroke-width="10" />
+            </mask>
+          </defs>
+          <path id="stGhost" class="st-ghost" />
+          <path id="stLine" class="st-line" mask="url(#stMask)" />
+          <g id="stPlane">
+            <path class="plane" d="M-16 -9 L18 0 L-16 9 L-9 0 Z M-9 0 L18 0" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" data-bg="#F3E7BC">
+      <span class="label mono">(07) Contact</span>
+      <h2 class="say" id="say" aria-label="Say hi.">Say hi.</h2>
+      <p class="contact-note" data-up>I'm an introvert, so an email is honestly my favourite way to talk. Projects,
+        internships, collabs, or just “hey, nice site”.</p>
+      <button class="email-btn" id="emailBtn" data-cursor="copy"><span id="emailTxt"></span><span
+          class="email-ico">⧉</span></button>
+      <div class="links" id="links"></div>
+    </section>
+  </main>
+
+  <footer class="foot mono">
+    <span>© <span id="year"></span> <span data-name>Santosh</span> · made in <span data-city>Delhi</span></span>
+    <span id="footJoke">page: 100% loaded · me: still loading</span>
+    <button class="to-top" id="toTop">back to top ↑</button>
+  </footer>
+
+  <div class="meter" aria-hidden="true">
+    <span class="meter-bar"><i id="meterFill"><span class="eyes"><span class="eye"><i></i></span><span
+            class="eye"><i></i></span></span></i></span>
+    <span id="meterTxt">0% read</span>
+  </div>
+
+  <div class="preview" id="preview" aria-hidden="true"></div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Film player">
+    <button class="lb-close mono" id="lbClose">close ✕</button>
+    <div class="lb-frame"><video id="lbVideo" controls playsinline></video></div>
+    <p class="lb-title" id="lbTitle"></p>
+  </div>
+  <div class="toast mono" id="toast" role="status"></div>
+
+  <script src="content.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
