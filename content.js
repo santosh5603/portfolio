@@ -4,7 +4,7 @@
    Edit this file to update the website content.
    ============================================================================ */
 window.SITE = {
-  name: "Santosh Kumar Sah",
+  name: "Santosh",
   role: "software engineer · AI systems & backend",
   city: "Rourkela, India",
   timezone: "Asia/Kolkata",
